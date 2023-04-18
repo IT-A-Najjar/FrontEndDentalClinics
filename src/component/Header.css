@@ -1,0 +1,42 @@
+:root{
+    --font-biscs:#195B71;
+}
+.nav__header {
+    position: fixed;
+    padding: 10px 0px;
+    margin: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 10000;
+    box-sizing: border-box;
+}
+
+.nav__header .nav__link {
+    float: right;
+}
+.nav__header .nav__link ul {
+    display: flex;
+}
+.nav__header .nav__link ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+}
+.nav__header .nav__link ul li a {
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 3;
+    padding-right:40px;
+    color: var(--font-biscs);
+}
+.nav__header .nav__link ul li a i{
+    font-size: 18px;
+    color:var(--font-biscs);
+    padding-right: 6px;
+    
+}
+.nav__header .nav__logo {
+    float: left;
+    padding-left: 40px ;
+    cursor: pointer;
+}

@@ -1,0 +1,82 @@
+:root{
+  --font-biscs:#195B71;
+}
+.Explore {
+  background-color: white;
+  display: grid;
+  max-width: 100%;
+  margin: auto;
+}
+.Explore-section {
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+
+}
+.card-section{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-section p{
+   max-width: 290px;
+}
+
+.Explore-section .Explore-section-1 .h2-Title {
+  line-height: 2;
+  font-size: 30px;
+  margin-left: 120px;
+  color: var(--font-biscs);
+}
+.Explore-section p{
+  margin-left: auto;
+  color: black;
+  margin-right: auto;
+}
+.card-section .card-f{
+  color: rgba(0, 0, 0, 0.481);
+}
+.Explore-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 28px;
+}
+.Explore-card .card-section img {
+  width: 70px;
+  height: 70px;
+  border: 2px solid white;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width:1400px) {
+    .Explore-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 28px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
+@media (max-width:800px) {
+    .Explore-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 28px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
+
+
+@media (max-width:500px) {
+  .Explore-card {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 28px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}

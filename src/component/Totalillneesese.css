@@ -1,0 +1,23 @@
+.aside-stretch {
+    background-color: rgb(64, 92, 177);
+    margin-left: -100px;
+    max-width: 450px;
+}
+.aside-stretch h2,
+p {
+    color: #fff;
+}
+.heading-section {
+    margin-left: 100px;
+}
+.fadeInUp {
+    color: #fff;
+    
+}
+.text{
+    font-size: 22px;
+}
+.number {
+display: block;
+text-align: center;
+}
