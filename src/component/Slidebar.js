@@ -99,7 +99,7 @@ function Slidebar() {
             <h1>{imageSlide[curentState].title}</h1>
             <p>{imageSlide[curentState].body}</p>
           </div>
-          <Button data="احجز الآن" />
+         <a href="/BookNow"> <Button data="احجز الآن" /></a>
           <div className="span-all">
             <div className="carousel-boullt">
               {imageSlide.map((imageSlide, curentState) => (

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6fa183f5-a1c1-4a95-9b35-1a57462bebb0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Doctoassistatn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Doctoassistatn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Doctorassistant.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Doctorassistant.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Slidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Slidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Slidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Slidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PxAqsH4Cvj6cTn1No1Enbxfg9z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fa183f5-a1c1-4a95-9b35-1a57462bebb0" name="Changes" comment="" />
+      <created>1684388554657</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684388554657</updated>
+      <workItem from="1684388558025" duration="2000" />
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,20 +1,42 @@
-import React from 'react';
-import './Totalillneesese.css';
-
-import Logo from  '../assets/7.png';
-const bg={
-    backgroundImage:`url(${Logo})`,
-    backgroundPosition:' 50% -247.6px;" data-stellar-background-ratio="0.5"'
-}
+import React from "react";
+import "./Totalillneesese.css";
 function Totalillneeses() {
   return (
     <div>
-        <section class="ftco-section ftco-counter img" id="section-counter" style={bg}>
+      <section className="section-1">
+        <div className="container">
+          <div className="heading">
+            <h1>الإحصائيات</h1>
+            <p>المرضى الذين تم العمل عليهم</p>
+          </div>
+          <div className="block">
+            <div class="text">
+              <strong class="number" data-number="376">
+                376
+              </strong>
+              <span className="Ihsa">حالات المعالجة</span>
+            </div>
+            <div class="text">
+              <strong class="number" data-number="374">
+                374
+              </strong>
+              <span className="Ihsa">عدد المرضى</span>
+            </div>
+            <div class="text">
+              <strong class="number" data-number="28">
+                28
+              </strong>
+              <span className="Ihsa">عدد الأطباء</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <section class="ftco-section ftco-counter img" id="section-counter" style={bg}>
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-md-3 aside-stretch py-5">
                 <div class="heading-section heading-section-white ftco-animate pr-md-4 fadeInUp ftco-animated">
-                    <h2 class="mb-3">الاحصائيات</h2>
+                    <h2 class="mb-4">الاحصائيات</h2>
                     <p>احصائيات المرضى الذين تم العمل عليهم</p>
                 </div>
             </div>
@@ -48,9 +70,9 @@ function Totalillneeses() {
             </div>
         </div>
     </div>
-</section>
+</section> */}
     </div>
-  )
+  );
 }
 
-export default Totalillneeses
+export default Totalillneeses;

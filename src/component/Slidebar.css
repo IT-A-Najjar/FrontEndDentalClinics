@@ -1,10 +1,11 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 .wrapper{
   height: 100%;
-  z-index: 100000;
+  z-index: 100;
   width: 100%;
   position: absolute;  
   background-color: linear-gradient(180deg,#195B71 5%,#119dff 50%,#030423)   ;

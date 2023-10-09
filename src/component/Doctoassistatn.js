@@ -4,15 +4,13 @@ function Doctoassistatn() {
   return (
     <div>
       <section className="ftco-section">
-        <div className="container">
-          <div className="row justify-content-center mb-5 pb-5">
-            <div className="head-doc col-md-7 text-center heading-section ftco-animate fadeInUp ftco-animated">
-              <h2 className="mb-3 ">الاطباء المشرفون</h2>
-              <p>نخبة من الأطباء المختصين في علوم الأسنان في المناطق المحررة</p>
-            </div>
+        <div className="container_1">
+          <div className="head-doc">
+            <h2>الأطباء المشرفين</h2>
+            <p>نخبة من الأطباء المختصين في علوم الأسنان في المناطق المحررة</p>
           </div>
           <div className="row">
-            <div className="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
+            <div className="col-lg-3 col-md-5 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated card__all">
               <div className="staff">
                 <div className="img mb-4"></div>
                 <div className="info text-center">
@@ -73,7 +71,7 @@ function Doctoassistatn() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
+            <div className="col-lg-3 col-md-5 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
               <div className="staff">
                 <div className="img mb-4"></div>
                 <div className="info text-center">
@@ -135,7 +133,7 @@ function Doctoassistatn() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
+            <div className="col-lg-3 col-md-5 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
               <div className="staff">
                 <div className="img mb-4"></div>
                 <div className="info text-center">
@@ -196,7 +194,7 @@ function Doctoassistatn() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
+            <div className="col-lg-3 col-md-5 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
               <div className="staff">
                 <div className="img mb-4"></div>
                 <div className="info text-center">
@@ -258,7 +256,7 @@ function Doctoassistatn() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
+            <div className="col-lg-3 col-md-5 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
               <div className="staff">
                 <div className="img mb-4"></div>
                 <div className="info text-center">
@@ -318,7 +316,7 @@ function Doctoassistatn() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
+            <div className="col-lg-3 col-md-5 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
               <div className="staff">
                 <div className="img mb-4"></div>
                 <div className="info text-center">
@@ -378,7 +376,7 @@ function Doctoassistatn() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
+            <div className="col-lg-3 col-md-5 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
               <div className="staff">
                 <div className="img mb-4"></div>
                 <div className="info text-center">
@@ -438,7 +436,7 @@ function Doctoassistatn() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
+            <div className="col-lg-3 col-md-5 d-flex mb-sm-4 ftco-animate fadeInUp ftco-animated">
               <div className="staff">
                 <div className="img mb-4"></div>
                 <div className="info text-center">

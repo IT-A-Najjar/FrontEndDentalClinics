@@ -1,0 +1,250 @@
+body {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  line-height: 1.4;
+
+}
+body{
+ 
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  color:white;
+  scroll-behavior: smooth;
+}
+.body_all {
+   background-image: url('../assets/back.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "dash dash bod  bod bod bod bod bod bod bod bod bod";
+}
+
+.icon {
+transition: ease-in .5s;
+  cursor: pointer;
+  display:block;
+}
+.icon2 {
+  transition: ease-in-out 2s;
+  transition: all .2s;
+  cursor: pointer;
+  display: none;
+}
+@media (min-width: 991px) {
+  .icon {
+    cursor: pointer;
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .body_all {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "  dash  bod bod bod bod bod";
+  }
+  .icon3{
+    position: absolute;
+    border-radius: 0px 48px 58px 0px;
+    margin-top: 93px;
+    color: #ced4e2;
+    font-size: 26px;
+    background-color: #195b71;
+    padding:15px;
+    z-index: 10000;
+    cursor: pointer;
+    
+  
+  }
+  .Dashboard {
+    position: relative;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .body_all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: " dash  bod bod";
+  }
+  .icon3{
+    position: absolute;
+    border-radius: 0px 48px 58px 0px;
+    margin-top: 93px;
+    color: #ced4e2;
+    font-size: 26px;
+    background-color: #195b71;
+    padding:15px;
+    z-index: 10000;
+    cursor: pointer;
+    
+  
+  }
+}
+
+.Dashboard {
+  grid-area: dash;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding-top: 80px;
+  z-index: 100;
+}
+
+.Dashboard .Dashboard_body {
+  background-color: #195b71;
+  padding-top: 20px;
+  position: relative;
+  height: 122vh;
+}
+/* .Dashboard.shiftLeft {
+  position: absolute;
+  right: 900px;
+
+} */
+
+.Dashboard.shiftRight {
+  position: absolute;
+  left:10px;
+  background-color:#195b71 ;
+}
+.Dashboard .Dashboard_body .Dashboard_image {
+  font-size: 12px;
+  display: block;
+}
+.Dashboard_i1 {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Dashboard .Dashboard_body .Dashboard_image .Dashboard_i1 img {
+  max-width: 100%;
+  border-radius: 50%;
+  background-color: white;
+}
+.Dashboard .Dashboard_body .Dashboard_image h1 {
+  font-size: 12px;
+  padding-top: 5px;
+  text-align: center;
+  color: white;
+}
+.Dashboard_nav {
+  width: 100%;
+}
+.Dashboard_nav .Dashboard_header .Dashboard_ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: white;
+  font-size: 15x;
+  line-height: 26px;
+  width: 100%;
+  padding-left: 0px;
+}
+.Dashboard_nav .Dashboard_header .Dashboard_ul .Dashboard_li {
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 2px solid rgb(110, 79, 79);
+  border-left: 2px solid rgb(110, 79, 79);
+  border-radius: 5px;
+}
+.Dashboard_nav .Dashboard_header .Dashboard_ul .Dashboard_li:hover {
+  background-color: #2d3c42;
+  border-top: 2px solid rgb(110, 79, 79);
+  border-right: 2px solid rgb(110, 79, 79);
+  border-bottom: none;
+  border-left: none;
+  border-radius: 5px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+/* Light Mode Button Styles
+--------------------------- */
+
+.light-mode-button {
+  background: 0;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin-top: 20px;
+}
+
+.light-mode-button:focus {
+  outline: none; /* Not ideal for accessibility */
+}
+
+.light-mode-button span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #d6d7db;
+  box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+
+.light-mode-button span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+
+/* Light & Dark Mode Styles
+		--------------------------- */
+
+body {
+  background-color: #f6f6f6;
+  transition: background-color 0.3s;
+}
+
+body[light-mode="dark"] {
+  background-color: #141516;
+  color: #ced4e2;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+  left: 55px;
+  background-color: #141516;
+}
+
+body[light-mode="dark"] a {
+  color: #141516;
+}
+.body_right {
+  margin-top: 100px;
+  grid-area: bod;
+}
+.Dashboard_body span {
+  font-size: 24px;
+  position: relative;
+  top: 0px;
+  left: 90%;
+  color: white;
+}
+.link{
+  color: white;
+  text-decoration: none;
+}
+.link:hover{
+  color: white;
+}
