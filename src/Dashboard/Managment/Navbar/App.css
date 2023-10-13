@@ -1,0 +1,32 @@
+.navbar {
+    padding: 10px;
+    text-align: center;
+    border-radius:12px;
+
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 10px;
+  }
+  
+.anchor{
+    color: #f0f0f0;
+    text-decoration: none;
+  background-color: #195b71;
+  padding: 10px;
+  border-radius: 2px;
+  }
+  
+  .anchor:hover {
+    border-bottom: 2px solid  #195b71;
+    color: #195b71;
+    background-color: #ffffff;
+  }
+  

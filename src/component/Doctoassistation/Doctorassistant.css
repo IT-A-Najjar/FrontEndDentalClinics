@@ -1,0 +1,216 @@
+:root {
+  --font-biscs: #195b71;
+}
+
+
+.ftco-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "at";
+}
+
+.container_1 {
+  grid-area: auto;
+  text-align: center;
+  margin-top: 5px;
+}
+.head-doc{
+  margin: 2rem;
+}
+
+.head-doc h2 {
+  color: var(--font-biscs);
+  padding-top: 30px;
+}
+
+.info .doc {
+  color: #0000008a;
+  padding-top: 0px;
+
+}
+
+.ftco-section .row {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.head-doc p {
+  color: rgba(0, 0, 0, 0.529);
+}
+
+.staff {
+  /* box-shadow: 3px -2px 2px 2px rgba(213, 208, 208, 0.745);
+  width: 80%;
+  padding: 20px;
+   margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: 8px; */
+  width: 100%;
+  display: block;
+  padding: 25px;
+  bordeR: 1px solid whitesmoke;
+  -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.staff:hover {
+  box-shadow:5px 6px 8px 8px rgba(213, 208, 208, 0.745);
+  transition: .3s;
+  cursor: pointer;
+
+}
+
+.staff img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.info .position {
+  color: var(--font-biscs);
+}
+
+.info a {
+  text-decoration: none;
+  color: #000;
+
+}
+
+
+.ftco-social {
+  margin-left: -90px;
+  margin-right: auto;
+}
+
+#facebook-f,
+#instagram,
+#twitter,
+#google {
+  width: 25px;
+  margin-left: 5px;
+}
+
+.m-icon svg {
+  margin-top: 50px;
+}
+.text-card-doctor{
+  margin-left: 50%;
+}
+
+ 
+ @media screen and (max-width:1300px) {
+  .ftco-social {
+    margin-left: -135px;
+    margin-right: auto;
+  }
+
+  #facebook-f,
+  #instagram,
+  #twitter,
+  #google {
+    width: 25px;
+    margin-left: 5px;
+  }
+
+  .m-icon svg {
+    margin-top: 50px;
+  }
+
+}
+@media screen and (max-width:1193px) {
+  .ftco-social {
+    margin-left: -155px;
+    margin-right: auto;
+  }
+
+  #facebook-f,
+  #instagram,
+  #twitter,
+  #google {
+    width: 25px;
+    margin-left: 5px;
+  }
+
+  .m-icon svg {
+    margin-top: 50px;
+  }
+
+}
+@media screen and (max-width:983px) {
+  .card__patient{
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr;
+
+  }
+  .ftco-social {
+    padding-left: 95px;
+    margin-right: auto;
+  }
+
+  #facebook-f,
+  #instagram,
+  #twitter,
+  #google {
+    width: 25px;
+    margin-left: 5px;
+  }
+
+  .m-icon svg {
+    margin-top: 50px;
+  }
+
+}
+@media screen and (max-width:777px) {
+ 
+  .ftco-social {
+    /* margin-left: 305px; */
+    margin-right: auto;
+  }
+
+  #facebook-f,
+  #instagram,
+  #twitter,
+  #google {
+    width: 25px;
+    margin-left: 5px;
+  }
+
+  .m-icon svg {
+    margin-top: 50px;
+  }
+
+}
+
+@media screen and (max-width:667px) {
+  .ftco-social {
+    /* margin-left: 190px; */
+    margin-right: auto;
+  }
+
+  #facebook-f,
+  #instagram,
+  #twitter,
+  #google {
+    width: 25px;
+    margin-left: 5px;
+  }
+
+  .m-icon svg {
+    margin-top: 50px;
+  }
+
+}

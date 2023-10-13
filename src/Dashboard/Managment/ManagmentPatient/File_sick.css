@@ -1,0 +1,36 @@
+
+/* تنسيق الشريط العمودي */
+.scrol_state {
+   max-height: 600px !important;
+   overflow-y: auto !important;
+}
+.scrol_state .card_state{
+   margin: 3rem 1rem 3rem 1rem !important;
+}
+.btn__color_selected{
+   background-color: #195b71 !important;
+   color: white !important;
+   margin: 0.5rem;
+}
+@media (max-width: 750px) {
+   .alert_file {
+      width: 250%;
+      left: 50%;
+      transform: translate(145px, 5px);
+      
+  }
+  .card {
+   margin-top: 0% !important;
+   width: 100% !important;
+}
+   .scrol_state  {
+      width: 300%;
+    transform: translate(225px, 5px);
+  }
+   .card_state  {
+      width: 250%;
+      left: 50%;
+      transform: translate(11px, 5px);
+  }
+
+}

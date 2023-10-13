@@ -1,49 +1,60 @@
-import { Component, Fragment } from "react";
-import { Route, Routes, Router } from "react-router-dom";
+import React from "react";
 import "./App.css";
-import Header from "./component/Header";
-// import Slidebar from "./component/Slidebar";
-// import Explore from "./component/Explore";
-// import Doctoassistatn from "./component/Doctoassistatn";
-// import Totalillneeses from "./component/Totalillneeses";
-// import Footer from "./component/Footer";
-import Login from "./component/Login";
-import Layour from "./component/Layour";
+import InfoPatient from "./component/infoPatient/infoPatient.js";
+import Header from "./component/Header/Header";
+import Login from "./component/Login/Login";
+import Layour from "./component/HomePage/Layour";
 import BookNow from "./component/BookNow/BookNow";
 import Landing_Dash from "./Dashboard/Landing_Dash";
-
+import ShowBusiness from "./component/Business/ShowBusiness";
+import Consultation from "./component/Consultation/Consultation";
+import ShowConsultation from "./component/Consultation/showConsultation.js";
+import Footer from "./component/Footer/Footer";
 function App() {
+  const privilege = sessionStorage.getItem("privilege");
+
   let Component;
   switch (window.location.pathname) {
     case "/":
       Component = <Layour />;
       break;
-    case "/Login":
+    case "/Business":
+      Component = <ShowBusiness />;
+      break;
+    case "/login":
       Component = <Login />;
       break;
     case "/BookNow":
       Component = <BookNow />;
       break;
-      case "/Landing_Dash":
-        Component = <Landing_Dash />;
-        break;
+    case "/Landing_Dash":
+      Component = <Landing_Dash />;
+      // if (privilege) {
+      //   Component = <Landing_Dash />;
+      // } else {
+      //   Component = <Layour />;
+      // }
+      break;
+    case "/Consultation":
+      Component = <Consultation />;
+      break;
+    case "/showConsultation":
+      Component = <ShowConsultation />;
+      break;
+    case "/infoPatient":
+      Component = <InfoPatient />;
+      break;
     default:
       break;
   }
+
   return (
     <>
       <div>
         <Header />
       </div>
-      <div>
-        {/* <Routes>
-          <Route path={"/"} element={<Layour />} />
-          <Route path={"/Login"} element={<Login />} />
-          <Route path={"/Booknow"} element={<BookNow />} />
-          {/* <Route path={"/Landing_Dash"} element={<Landing_Dash />} /> 
-        </Routes> */}
-        {Component}
-      </div>
+      <div>{Component}</div>
+      {/* <Layour /> */}
     </>
   );
 }

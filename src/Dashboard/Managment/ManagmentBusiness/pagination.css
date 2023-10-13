@@ -1,0 +1,134 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #195b71;
+
+}
+
+@media (max-width: 567px) {
+  .btn-close {
+    margin-right: 214px !important;
+  }
+}
+
+
+
+
+.color_add {
+  background-color: #195b71 !important;
+  color: rgb(255, 255, 255) !important;
+  /* font-size: 12px !important; */
+  /* width: 50% !important; */
+}
+
+/* .btn-close{
+   margin-right: 340px !important;
+  } */
+
+.pagination ul {
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination li {
+  margin: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.pagination li.previous,
+.pagination li.next {
+
+  background-color: transparent;
+  border: none;
+}
+
+.pagination li.previous:hover,
+.pagination li.next:hover {
+  color: #007bff;
+  background-color: #007bff;
+}
+
+.pagination li.active {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.pagination li:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination li a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.pagination li.active a {
+  color: #fff;
+}
+
+/* @media screen and (max-width:667px) {
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      background-color: rgb(19, 91, 113);
+      max-width: 1140px;
+      margin-left: -635px;
+      margin-right: 160px;
+    }
+    
+  } */
+
+/* @media screen and (max-width:1300px) {
+
+    .pagination{
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      width: 1084px;
+      margin-left: auto;
+      margin-right: auto;
+      transform: translateX(-20px);
+     }
+
+    
+  }
+  @media screen and (max-width:1000px) {
+
+    .pagination{
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      width: 1082px;
+      margin-left: auto;
+      margin-right: auto;
+      transform: translateX(-50px);
+
+     }
+
+    
+  }
+  @media screen and (max-width:667px) {
+    
+    .pagination{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+      transform: translateX(400px);
+
+
+     }
+
+    
+  } */

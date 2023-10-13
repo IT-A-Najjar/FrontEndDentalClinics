@@ -1,0 +1,41 @@
+/* تخصيص شكل الأسنان باستخدام CSS */
+.tooth {
+   width: 30px;
+   height: 30px;
+   border-radius: 8px;
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+}
+.tooth1 {
+   width: 75%;
+   height: 30px;
+   border-radius: 8px;
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+}
+.td-table-tooth{
+   padding: 5px 2px 0px 3px;
+}
+
+/* تخصيص العدد داخل السن */
+.tooth-label {
+   position: absolute;
+   top: 50%;
+   width: 100%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-weight: bold;
+}
+
+/* تخصيص اللون عند النقر */
+.selected {
+   background-color: #195b71;
+   color: white;
+}
+
+/* إخفاء الcheckboxes */
+input[type="checkbox"] {
+   display: none;
+}

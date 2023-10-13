@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+body {
+   font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #195b71;
+}
+.alert_file{
+  text-align: center;
+ font-size: 22px !important;  
+ color: #0d2c32;
+
+ }
+.center_file{
+margin-left: auto;
+margin-right: auto; 
+  
+
+ }
+ .span_class{
+  color: #ffffff !important;
+  margin-right: 12px !important;
+  margin-left: 12px !important;
+ }
+ .btn__color{
+  background-color: #195b71 !important; 
+  color: #ffffff !important;
+  border-radius: 12px 12px px 0px !important;
+
+ }
+ .btn__color:hover{
+  background-color: #195b71 !important;
+
+ }
+ .card___2{
+padding: 12px ; 
+ }
+ .all_btn{
+  margin: 12px;
+ }
+  
+  .all_input{
+    background-color: #195b71 !important;
+    padding-bottom: 22px;
+  }
+ 

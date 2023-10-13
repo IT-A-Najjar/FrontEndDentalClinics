@@ -1,0 +1,23 @@
+.btn-all{
+    display: inline-block;
+    margin: 10px 0;
+
+    
+}
+.btn-all .btn-now {
+  color: white;
+  padding: 13px 30px;
+  border: 2px solid #195B71;
+  background-color: #195B71;
+  border-radius: 30px;
+  z-index: 1000;
+  
+}
+.btn-now:hover {
+  background-color: #fff;
+  color: #195B71;
+  transition: 0.2s ease-in-out;
+  /* box-shadow: 1px 1px 1px 1px #d08496 ; */
+  border: 2px solid #195B71;
+  transform: scale(1.1);
+}

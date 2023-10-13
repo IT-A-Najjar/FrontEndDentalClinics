@@ -1,0 +1,122 @@
+.card {
+  position: relative;
+  width: 350px;
+  height: 180px;
+  box-sizing: border-box;
+  background-color: #212121;
+  border: 5px solid #222;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px,
+          inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all ease-in-out 0.3s;
+  overflow: hidden;
+}
+
+ 
+
+:root{
+  --font-biscs:#195B71;
+}
+.Explore {
+  background-color: white;
+  display: grid;
+  max-width: 100%;
+  margin: auto;
+}
+.Explore-section {
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  text-align: center;
+
+}
+.card-section{
+  /* border: #d2d2d2 solid 2px; */
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 1rem;
+  /* margin-left: auto;
+  margin-right: auto; */
+  text-align: center;
+
+}
+
+.card-section p{
+   max-width: 290px;
+}
+
+.Explore-section .Explore-section-1 .h2-Title {
+  line-height: 2;
+  font-size: 30px;
+  color: var(--font-biscs);
+}
+.Explore-section p{
+  margin-left: auto;
+  color: black;
+  margin-right: auto;
+
+}
+.card-section .card-fo{
+  text-align: center;
+
+}
+.image__section{
+margin-left: auto;
+margin-right: auto;
+}
+.card-section .card-f{
+  color: rgba(0, 0, 0, 0.481);
+ text-align: center;
+}
+.Explore-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 28px;
+}
+.Explore-card .card-section img {
+  width: 70px;
+  height: 70px;
+  border: 2px solid white;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width:1400px) {
+    .Explore-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 28px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
+@media (max-width:800px) {
+    .Explore-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 28px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
+
+
+@media (max-width:500px) {
+  .Explore-card {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 28px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
