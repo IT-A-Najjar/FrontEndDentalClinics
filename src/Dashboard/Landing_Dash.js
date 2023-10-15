@@ -5,9 +5,8 @@ import photo1 from '../assets/doctor.png';
 import { Link, Route, Routes } from "react-router-dom";
 import Managment_sick from "./Managment/ManagmentPatient/Get_all_sicks";
 import Managment_state from "./Managment/ManagmentState/Get_all_state";
-import Managment_doctor from "./Managment/ManagmentUsers/Add_doctor";
+import Managment_doctor from "./Managment/ManagmentUsers/Get_all_doctor";
 import Managment_Category from "./Managment/ManagmentCategory/Get_all_category";
-import Get_all_doctor from "./Managment/ManagmentUsers/Get_all_doctor";
 import Get_all_Business from "./Managment/ManagmentBusiness/Get_all_Business";
 import Get_all_illnesse from './Managment/ManagmentIllnesse/Get_all_illnesse';
 import Update_users from "./Managment/ManagmentUsers/Update_users";
@@ -18,6 +17,7 @@ import Update_sick_notService from "./Managment/ManagmentPatientnotservice/Updat
 import axios from "axios";
 import { faL } from "@fortawesome/free-solid-svg-icons";
 import File_sick from "./Managment/ManagmentPatient/File_sick";
+import http from "../http";
 function Landing_Dash() {
   let icon = document.getElementsByClassName("icon");
   const email = sessionStorage.getItem("email");
@@ -28,7 +28,7 @@ function Landing_Dash() {
   const [name, setName] = useState('');
   useEffect(() => {
     async function getusers() {
-      await axios.get(`http://127.0.0.1:8000/api/users/${id_user}`).then((res) => {
+      await http.get(`/users/${id_user}`).then((res) => {
         setName(res.data.user.name);
         console.log("Done");
 
@@ -163,7 +163,7 @@ function Landing_Dash() {
           <div className="Dashboard_nav">
             <div className="Dashboard_header">
               <ul className="Dashboard_ul">
-                {privilege == "0" || privilege == "1" ? (
+                {privilege == 0 || privilege == "1" ? (
                   <ul onClick={togglelink} className={`Dashboard_li ${isLinkOpen ? "clicklink" : ""}`}>
                     <li>
                       <Link to="/Managmentdoctor" onClick={togglelink} className={`link ${isLinkOpen ? "clicklink" : ""}`}>
@@ -173,7 +173,7 @@ function Landing_Dash() {
                     </li>
                   </ul>
                 ) : ""}
-                {privilege == "0" ? null : (
+                {privilege == 0 || privilege == 2 ? null : (
                   <div onClick={togglelink6} className={`Dashboard_li ${isLinkOpen6 ? "clicklink" : ""}`}>
                     <li>
                       <Link to="/ManagmentCategory" className="link">
@@ -182,7 +182,7 @@ function Landing_Dash() {
                       </Link>
                     </li>
                   </div>)}
-                {privilege == "0" ? null : (
+                {privilege == "0" || privilege == 2 ? null : (
                   <div onClick={togglelink1} className={`Dashboard_li ${isLinkOpen1 ? "clicklink" : ""}`}>
                     <li>
                       <Link to="/ManagmentIllnesse" className="link">
@@ -209,7 +209,7 @@ function Landing_Dash() {
                       </Link>
                     </li>
                   </div>)}
-                {privilege == "0" || privilege == "1" ? null : (
+                {privilege == "0" ? null : (
                   <div onClick={togglelink4} className={`Dashboard_li ${isLinkOpen4 ? "clicklink" : ""}`}>
 
                     <li>
@@ -220,7 +220,7 @@ function Landing_Dash() {
                     </li>
                   </div>)
                 }
-                {privilege == "0" || privilege == "1" ? null : (
+                {privilege == "0" ? null : (
                   <div onClick={togglelink5} className={`Dashboard_li ${isLinkOpen5 ? "clicklink" : ""}`}>
                     <li>
                       <Link to="/PatientnotService" className="link">
@@ -245,7 +245,6 @@ function Landing_Dash() {
           <Route path={"/ManagmentState"} element={<Managment_state />} />
           <Route path={"/ManagmentCategory"} element={<Managment_Category />} />
           <Route path={"/ManagmentIllnesse"} element={<Get_all_illnesse />} />
-          <Route path={"/showDoctor"} element={<Get_all_doctor />} />
           <Route path={"/showBusiness"} element={<Get_all_Business />} />
           <Route path={"/users/:id"} element={<Update_users />} />
           <Route path={"/business/:id"} element={<Update_Business />} />

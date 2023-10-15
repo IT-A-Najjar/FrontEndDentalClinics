@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import "../ManagmentUsers/Add_doctor.css";
 import http from '../../../http';
 import '../Navbar/App.css'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
 import '../ManagmentBusiness/pagination.css';
 import Loding from "../Loding.js";
+import Button from 'react-bootstrap/Button';
+
 function Get_all_sicks_not_service() {
     const user_id = sessionStorage.getItem("id");
 
@@ -63,6 +65,16 @@ function Get_all_sicks_not_service() {
     const handlePageChange = ({ selected }) => {
         setCurrentPage(selected);
     };
+
+    const Navigate = useNavigate();
+
+    const handlePateintClick = (pateintID) => {
+        // يمكنك هنا تنفيذ العمليات التي تحتاج إلى subjectID مثل الانتقال إلى الصفحة الأخرى
+        console.log("تم النقر على الدورة بمعرف:", pateintID);
+        // setSubjectID(subjectID); // تحديث subjectID
+        Navigate(`/File_sick`, { state: { id: pateintID } }); // التوجيه إلى صفحة Subject مع subjectID
+
+    };
     return (
         <>
             {/* <Navbar
@@ -96,14 +108,15 @@ function Get_all_sicks_not_service() {
                                     <td className="text-left">{pateint.age}</td>
                                     <td className="text-left">{pateint.phone_number}</td>
                                     <td className="text-left">{pateint.symbol}</td>
-                                    <td className="text-left">{pateint.user?.name}</td>
+                                    <td className="text-left">{pateint.name}</td>
                                     <td>
-                                        <button className="btn-blue">
-                                            <Link className="a-link" to={`/pateint/${pateint.id}`}>تخديم</Link>
-                                        </button>
-                                        <button className="btn-red" type="button" onClick={(e) => delteState(e, pateint.id)}>
+                                        
+                                        <Button variant="success"  onClick={() => { handlePateintClick(pateint.id) }}>
+                                            عرض إضبارة المريض
+                                        </Button>
+                                        <Button variant="danger" onClick={(e) => delteState(e, pateint.id)}>
                                             حذف
-                                        </button>
+                                        </Button>
                                     </td>
                                 </tr>
                             ))}

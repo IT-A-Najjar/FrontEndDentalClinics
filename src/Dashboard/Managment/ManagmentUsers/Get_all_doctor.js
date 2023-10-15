@@ -222,12 +222,6 @@ function Get_all_doctor() {
     return (
         <>
             <ToastContainer />
-            <Navbar
-                addPath='/Managmentdoctor'
-                showPath='/showDoctor'
-                addElement={<Add_doctor />}
-                showElement={<Get_all_doctor />}
-            />
             <Button className="color_add" variant='' onClick={handleShow}>
                 إضافة مريض
             </Button>
@@ -389,7 +383,6 @@ function Get_all_doctor() {
                                 <th>الجنس</th>
                                 <th>رقم الهاتف</th>
                                 <th>الجامعة</th>
-                                <th>الصور</th>
                                 <th>الصلاحيات</th>
                                 <th className="tran">العملية</th>
                             </tr>
@@ -404,22 +397,25 @@ function Get_all_doctor() {
                                     <td className="text-left">{user.gender == 'female' ? 'أنثى' : 'ذكر'}</td>
                                     <td className="text-left">{user.phone_number}</td>
                                     <td className="text-left">{user.university}</td>
-                                    <td><img src={p2} className="image_card2" alt="صورة العمل" />
-                                    </td>
-                                    {/* <td className="text-left">{user.privilege}</td> */}
                                     <td className="text-left">{user.privilege === 0 ? 'مدير نظام' : (user.privilege === 1 ? 'مشرف' : 'دكتور')}</td>
                                     <td className="text-left" >
                                         <Button className="color_add" variant='' onClick={() => handleShowUpdate(user)}>
                                             تعديل
                                         </Button>
-                                        {user.is_disabled === 1 ? (
-                                            <Button variant="danger" className='m-2' onClick={() => handleShowDelete(user)}>
-                                                تعطيل
-                                            </Button>
-                                        ) : <Button variant="success" className='m-2' onClick={() => handleShowEnable(user)}>
-                                            تفعيل
-                                        </Button>
+
+                                        {
+                                            (user.is_disabled === 1 && privilegeStatus === 0) ? (
+                                                <Button variant="danger" className='m-2' onClick={() => handleShowDelete(user)}>
+                                                    تعطيل
+                                                </Button>
+                                            ) : (privilegeStatus === 0) ? (
+                                                <Button variant="success" className='m-2' onClick={() => handleShowEnable(user)}>
+                                                    تفعيل
+                                                </Button>
+                                            ) : null
                                         }
+
+
 
                                         <Modal
                                             show={ShowUpdate}
