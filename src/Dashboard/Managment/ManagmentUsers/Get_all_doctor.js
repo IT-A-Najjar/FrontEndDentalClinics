@@ -404,11 +404,11 @@ function Get_all_doctor() {
                                         </Button>
 
                                         {
-                                            (user.is_disabled === 1 && privilegeStatus === 0) ? (
+                                            (user.is_disabled === 1 && privilegeStatus == 0) ? (
                                                 <Button variant="danger" className='m-2' onClick={() => handleShowDelete(user)}>
                                                     تعطيل
                                                 </Button>
-                                            ) : (privilegeStatus === 0) ? (
+                                            ) : (privilegeStatus == 0) ? (
                                                 <Button variant="success" className='m-2' onClick={() => handleShowEnable(user)}>
                                                     تفعيل
                                                 </Button>
